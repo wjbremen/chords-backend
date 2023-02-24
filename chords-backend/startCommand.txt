@@ -1,0 +1,6 @@
+The CLI command to start express development server
+
+DEBUG=chords-backend:* npm start
+
+other info: 
+listening on port 4000
