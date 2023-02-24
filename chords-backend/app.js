@@ -9,7 +9,8 @@ var usersRouter = require('./routes/users');
 var exportFilesRouter = require('./routes/exportFiles');
 var pianoRouter = require('./routes/piano');
 var guitarRouter = require('./routes/guitar');
-var getPianoFilesRouter = require("./routes/getPianoFiles"); 
+//var getPianoFilesRouter = require("./routes/getPianoFiles"); 
+var getChordDataRouter = require("./routes/getChordData"); 
 
 
 var app = express();
@@ -32,7 +33,10 @@ app.use('/users', usersRouter);
 app.use('/piano', pianoRouter);
 app.use('/guitar', guitarRouter);
 app.use('/exportFiles', exportFilesRouter);
-app.use('/getPianoFiles', getPianoFilesRouter); 
+app.use("/getChordData", getChordDataRouter); 
+//app.use('/getPianoFiles', getPianoFilesRouter);
+
+
 
 
 // catch 404 and forward to error handler
