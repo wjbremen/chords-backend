@@ -15,7 +15,19 @@ var getChordDataRouter = require("./routes/getChordData");
 
 var app = express();
 
-// view engine setup
+const mongoose = require("mongoose"); 
+const { mainModule } = require('process');
+//mongoose.set("strictquery", false); 
+const mongodb = 'mongodb://127.0.0.1:27017/test';
+
+main().catch(err => console.log(err));
+
+async function main(){
+  await mongoose.connect(mongodb); 
+  console.log("inside main"); 
+}
+
+
 
 
 app.use(logger('dev'));
