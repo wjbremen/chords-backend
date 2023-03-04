@@ -4,7 +4,7 @@ const allChords = require("../allChords");
 const chordConstants = require("../chordConstants"); 
 const chordLogic = require("./chordLogic");
 
-mongoose.set('strictQuery', false);
+//mongoose.set('strictQuery', false);
 
 
 //root = 48
