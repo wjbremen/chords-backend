@@ -1,0 +1,2 @@
+navigate into chordScripts directory and run command : 
+mongosh
